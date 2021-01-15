@@ -11,13 +11,13 @@ import {
 } from "reactstrap";
 
 const links = [
-    { href: "#home", text: "Home" },
-    { href: "#about", text: "About" },
-    { href: "#membership", text: "Membership" },
-    { href: "#events", text: "Events" },
-    { href: "#gallery", text: "Gallery" },
+    { href: "/home", text: "Home" },
+    { href: "/about", text: "About" },
+    { href: "/membership", text: "Membership" },
+    { href: "/events", text: "Events" },
+    { href: "/gallery", text: "Gallery" },
     { href: "#recipes", text: "Recipes" },
-    { href: "#contact", text: "Contact" },
+    { href: "/contact", text: "Contact" },
     
   ];
 

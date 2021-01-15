@@ -10,7 +10,7 @@ import {
 
 const items = [
     {
-      src:'assets/img/slide/m1.jpg',
+      src:'assets/img/slide/s3.jpg',
       altText: 'Slide 1',
       caption: <p class="animate__animated animate__fadeInUp">There is something profoundly satisfying about sharing a meal. Eating together, breaking bread together, is one of the oldest and most fundamentally unifying of human experiences.</p>,
       header: <span><h1 className="animate__animated animate__fadeInDown text-" style={{color: "orange"}} >Lunchclub</h1></span>,
@@ -24,7 +24,7 @@ const items = [
       id: '2'
     },
     {
-      src: 'assets/img/slide/s3.jpg',
+      src: 'assets/img/slide/m1.jpg',
       altText: 'Slide 3',
       caption: <p class="animate__animated animate__fadeInUp">No matter our age, everyone in our household knows that cooking and eating together is where fun is.</p>,
       header: <h1 class="animate__animated animate__fadeInDown" style={{color: "orange"}}>Have some fun!</h1>,
