@@ -75,7 +75,7 @@ const HomeCarousel = (props) => {
             {
             `.custom-tag {
                 max-width: 100%;
-                height: 500px;
+                height: 300px;
                 background: black;
                 
                 }`
