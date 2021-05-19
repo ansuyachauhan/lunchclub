@@ -13,7 +13,7 @@ import ContactUsHome from './ContactUsHomeComponent';
 
 const mapStateToProps = state => {
     return {
-        campsites: state.campsites,
+        events: state.events,
         gallery: state.gallery,
        
     };
@@ -31,7 +31,7 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path='/home' component={HomePage} />
-                    <Route exact path='/events' render={() => <Events campsites={this.props.campsites} />} />
+                    <Route exact path='/events' render={() => <Events events={this.props.events} />} />
                     <Route exact path='/gallery' render={() => <Gallery gallery={this.props.gallery} />} />
                     <Route exact path='/membership' render={() => <MembershipHome campsites={this.props.campsites} />} />
                     <Route exact path='/about' component={About} />

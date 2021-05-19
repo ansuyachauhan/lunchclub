@@ -5,19 +5,21 @@ import Label from 'reactstrap/lib/Label';
 
 
 
-function RenderDirectoryItem({campsite}) {
+function RenderDirectoryItem({event}) {
     return (
 
         <Card>
-            <Link to={`/events/${campsite.id}`} ></Link>
+            <Link to={`/events/${event.id}`} ></Link>
             <CardImg top width="100%" src="/assets/images/unnamed.jpg" alt="Card image cap" />
             <CardImgOverlay>
                 <CardBody>
-                <CardTitle className="section-title"><h3>{campsite.eventName}</h3></CardTitle>
+                <CardTitle className="section-title"><h3>{event.eventName}</h3></CardTitle>
                 
             <CardText>
-                <Label>Date: </Label> {campsite.date} <br/>
-                <Label>Time: </Label> {campsite.time} <br/></CardText>
+                <Label>Date: </Label> {event.date} <br/>
+                <Label>Time: </Label> {event.time} <br/>
+                </CardText>
+               
                 <Button className="btn btn-warning">Join</Button>
                 </CardBody>
            </CardImgOverlay>
@@ -28,10 +30,10 @@ function RenderDirectoryItem({campsite}) {
 
 function Events(props) {
 
-    const events = props.campsites.map(campsite => {
+    const events = props.events.map(event => {
         return (
-            <div key={campsite.id} className="col-md-5 m-1">
-                <RenderDirectoryItem campsite={campsite}/>
+            <div key={event.id} className="col-md-5 m-1">
+                <RenderDirectoryItem event={event}/>
             </div>
         );
     });

@@ -1,9 +1,9 @@
-import { CAMPSITES } from '../shared/campsites';
+import { EVENTS } from '../shared/events';
 import { GALLERY } from '../shared/gallery';
 
 
 export const initialState = {
-    campsites: CAMPSITES,
+    events: EVENTS,
     gallery: GALLERY,
 
 };
